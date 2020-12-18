@@ -32,6 +32,7 @@ jobs:
       - uses: actions/checkout@master
         with:
           repository: petronny/lilac
+          ref: backup
           path: lilac
 
       - uses: actions/checkout@master
