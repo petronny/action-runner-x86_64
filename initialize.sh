@@ -4,7 +4,7 @@ set -ex
 pacman -Syu --noconfirm
 pacman -S --noconfirm --needed base-devel devtools dbus git \
 	jq wget zsh\
-	pyalpm python-lxml python-requests python-toposort python-yaml
+	pyalpm python-lxml python-requests python-toposort python-yaml python-toml
 
 sed \
 	-e "s|MAKEFLAGS=.*|MAKEFLAGS=-j$(nproc)|" \
